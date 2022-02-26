@@ -1,0 +1,33 @@
+{
+    "slider": {
+        "heros": [
+            {
+                "header": "Enjoy Delicious Burgers!",
+                "subtext": "Here at Bob's Burgers, we make our burgers with the freshest ingredients.",
+                "bg_image": "/images/burger-1.png",
+                "link": "#",
+                "link_text": "Order Takeout"
+            },
+            {
+                "header": "Open indoor dining!",
+                "subtext": "We're now serving our customers indoors (and continuing to offer takeout).",
+                "bg_image": "/images/burger-2.jpg",
+                "link": "/location",
+                "link_text": "Location Info"
+            }
+        ]
+    },
+    "about": {
+        "header": "Welcome to Bob's Burgers",
+        "subtext": "Serving the best burgers in Jersey since 2011. The Belcher family - comprised of Bob, Linda, Tina, Gene, and Louise - have been running the restaurant since Bob took over. Enjoy!",
+        "bg_image": "/images/burger-3.jpg",
+        "images": [
+            {"image": "/images/egg-burger.jpg", "burger_name": "Eggers Can't Be Cheesers Burger"},
+            {"image": "/images/shallot-burger.jpg", "burger_name": "Hit Me With Your Best Shallot Burger"},
+            {"image": "/images/bacon-burger.jpg", "burger_name": "New Bacon-ings Burger"}
+        ]
+    },
+    "catering": {
+        "image": "/images/bobs-burgers-family.jpeg"
+    }   
+}

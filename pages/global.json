@@ -1,0 +1,51 @@
+{
+    "title": "Bob's Burgers",
+    "description": "Serving the best burgers in Jersey since 2011. The Belcher family - comprised of Bob, Linda, Tina, Gene, and Louise - have been running the restaurant since Bob took over. Enjoy!",
+    "hours": [
+        {"day": "Monday", "time": "Closed"},
+        {"day": "Tuesday-Thursday", "time": "10am-10pm"},
+        {"day": "Friday-Sunday", "time": "10am-11pm"}
+    ],
+    "socials": [
+        {"platform": "twitter", "cssClass": "icon-twitter"},
+        {"platform": "facebook", "cssClass": "icon-facebook"},
+        {"platform": "instagram", "cssClass": "icon-instagram"}
+    ],
+    "menus": [
+        {
+            "menuName": "Burgers", 
+            "menuContents": [
+                {"itemName": "Regular", "itemImage": "/images/regular.jpg", "itemPrice": "$5.00"},
+                {"itemName": "Special of the Day", "itemImage": "/images/special.jpg", "itemPrice": "$5.95"}
+            ]
+        },
+        {
+            "menuName": "Sides", 
+            "menuContents": [
+                {"itemName": "Fries", "itemImage": "/images/fries.jpg", "itemPrice": "$2.00"},
+                {"itemName": "Side Salad", "itemImage": "/images/side-salad.png", "itemPrice": "$2.50"}
+            ]
+        },
+        {
+            "menuName": "Drinks", 
+            "menuContents": [
+                {"itemName": "Soda", "itemImage": "/images/soda.jpg", "itemPrice": "$2.00"},
+                {"itemName": "Beer", "itemImage": "/images/beer.png", "itemPrice": "$4.00"}
+            ]
+        }
+    ],
+    "team": [
+        {
+            "image": "/images/team-bg.jpg",
+            "parents": [
+                {"name": "Bob", "image": "/images/bob.png", "quote": "It’s not dinner, and it isn’t theater either. It’s like the imitation cheese of theater."},
+                {"name": "Linda", "image": "/images/linda.png", "quote": "I was gonna punch you, but I'm holding wine."}
+            ],
+            "kids": [
+                {"name": "Tina", "image": "/images/tina.png", "quote": "Brr, it sure is cold in here. I wish some strong, chivalrous man would lend me his jacket"},
+                {"name": "Gene", "image": "/images/gene.png", "quote": "Summer is awful. There's too much pressure to enjoy yourself."},
+                {"name": "Louise", "image": "/images/louise.png", "quote": "Hey, I don't appreciate your lack of sarcasm!"}
+            ]
+        }
+    ]
+}

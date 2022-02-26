@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{>head}}
+  </head>
+   
+  <body>
+
+  {{>nav}}
+  <section class="hero-wrap hero-wrap-2" style="background-image: url('{{page.bg-image}}');" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-center justify-content-center">
+          <div class="col-md-9 ftco-animate text-center">
+            <h1 class="mb-2 bread">Meet The Team</h1>
+            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Menu <i class="ion-ios-arrow-forward"></i></span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="ftco-section bg-light text-center">
+     <div class="container px-5">
+    {{#global.menus}}
+     <div class="row px-5">
+           <div class="col-md-12">
+               <h3>{{menuName}}</h3>
+           </div>
+           {{#menuContents}}
+            <div class="menus d-flex ftco-animate col-md-6 p-3">
+              <div class="menu-img img" style="background-image: url({{itemImage}});"></div>
+                <div class="text">
+              	    <div class="d-flex">
+	                    <div class="one-half">
+	                     <h3>{{itemName}}</h3>
+	                    </div>
+	                    <div class="one-forth">
+	                        <span class="price">{{itemPrice}}</span>
+	                     </div>
+	                 </div>
+                </div>
+            </div>
+            {{/menuContents}}
+    </div>
+{{/global.menus}}
+     </div>
+    </section>
+
+  </body>
+
+  {{>footer}}
+
+  {{>scripts}}
+
+  </html>

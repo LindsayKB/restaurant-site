@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     {{>head}}
+  </head>
+  <body>
+
+    {{>nav}}
+    
+    <section class="home-slider js-fullheight owl-carousel bg-white">
+    {{#page.slider}}
+      {{#heros}}
+      <div class="slider-item js-fullheight">
+      	<div class="overlay"></div>
+        <div class="container-fluid p-0">
+          <div class="row d-md-flex no-gutters slider-text js-fullheight align-items-center justify-content-end" data-scrollax-parent="true">
+          	<div class="one-third order-md-last img js-fullheight" style="background-image:url({{bg_image}});">
+          		<div class="overlay"></div>
+          	</div>
+	          <div class="one-forth d-flex js-fullheight align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+	          	<div class="text mt-md-5">
+		            <h1 class="mb-4">{{header}}</h1>
+		            <p>{{subtext}}</p>
+		            <p><a href="{{link}}" class="btn btn-primary px-4 py-3 mt-3">{{link_text}}</a></p>
+	            </div>
+	          </div>
+        	</div>
+        </div>
+      </div>
+       {{/heros}}
+      {{/page.slider}}
+    </section>
+	
+
+		<section class="ftco-section ftco-wrap-about ftco-no-pb ftco-no-pt">
+			<div class="container">
+				<div class="row no-gutters">
+					<div class="col-sm-5 img img-2 d-flex align-items-center justify-content-center justify-content-md-end" style="background-image: url({{page.about.bg_image}}); position: relative"></div>
+					<div class="col-sm-7 wrap-about py-5 ftco-animate">
+	          <div class="heading-section mt-5 mb-4">
+	          	<div class="pl-lg-5 ml-md-5">
+		          	<span class="subheading">About</span>
+		            <h2 class="mb-4">{{page.about.header}}</h2>
+	            </div>
+	          </div>
+	          <div class="pl-lg-5 ml-md-5">
+							<p>{{page.about.subtext}}</p>
+							<h3 class="mt-5">Our Specialties</h3>
+							<div class="thumb my-4 d-flex">
+                    {{#page.about.images}}
+	            	<a href="#" class="thumb-menu pr-md-4 text-center">
+	            		<div class="img" style="background-image: url({{image}});"></div>
+	            		<h4>{{burger_name}}</h4>
+	            	</a>
+                    {{/page.about.images}}
+	            </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+    <section class="ftco-section">
+    	<div class="container">
+    		<div class="row justify-content-center mb-5 pb-2">
+          <div class="col-md-7 text-center heading-section ftco-animate">
+          	<span class="subheading">Menu</span>
+          </div>
+        </div>
+        <div class="row">
+        {{#global.menus}}
+        	<div class="col-md-6 col-lg-4 menu-wrap">
+        		<div class="heading-menu text-center ftco-animate">
+        			<h3>{{menuName}}</h3>
+        		</div>
+                {{#menuContents}}
+            <div class="menus d-flex ftco-animate">
+              <div class="menu-img img" style="background-image: url({{itemImage}});"></div>
+                <div class="text">
+              	    <div class="d-flex">
+	                    <div class="one-half">
+	                     <h3>{{itemName}}</h3>
+	                    </div>
+	                    <div class="one-forth">
+	                        <span class="price">{{itemPrice}}</span>
+	                     </div>
+	                 </div>
+                </div>
+            </div>
+            {{/menuContents}}
+            </div>
+            {{/global.menus}}
+        	</div>
+            </div>
+    </section>
+{{#global.team}}
+    <section class="ftco-section testimony-section" style="background-image: url({{image}})" data-stellar-background-ratio="0.5">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-2">
+          <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
+          	<span class="subheading">Meet the Team</span>
+          </div>
+        </div>
+        <div class="row ftco-animate justify-content-center">
+          <div class="col-md-8">
+          <div class="row">
+               {{#parents}}
+                     <div class="text-center col-md-6">
+                        <div class="user-img mb-4" style="background-image: url({{image}})">
+                        </div>
+                         <div class="text p-3">
+                           <h4 class="name">{{name}}</h4>
+                            <p class="quote mb-4">"{{quote}}"</p>
+                        </div>
+                    </div>
+               {{/parents}}
+               {{#kids}}
+               <div class="text-center col-md-4">
+                        <div class="user-img mb-4" style="background-image: url({{image}})">
+                        </div>
+                         <div class="text p-3">
+                            <h4 class="name">{{name}}</h4>
+                            <p class="quote mb-4">"{{quote}}"</p>
+                        </div>
+                    </div>
+               {{/kids}}
+         
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+   {{/global.team}}			
+
+		<section class="ftco-section ftco-no-pt ftco-no-pb">
+			<div class="container">
+				<div class="row d-flex">
+          <div class="col-md-5 ftco-animate img img-2" style="background-image: url({{page.catering.image}});"></div>
+          <div class="col-md-7 ftco-animate makereservation p-4 p-md-5">
+          	<div class="heading-section ftco-animate mb-5">
+	          	<span class="subheading">Catering</span>
+	            <h2 class="mb-4">Get A Quote</h2>
+	          </div>
+            <form action="#">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="">Name</label>
+                    <input type="text" class="form-control" placeholder="Your Name">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="">Email</label>
+                    <input type="text" class="form-control" placeholder="Your Email">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="">Phone</label>
+                    <input type="text" class="form-control" placeholder="Phone">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="">Phone</label>
+                    <input type="text" class="form-control" id="book_date" placeholder="Date">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="">Time</label>
+                    <input type="text" class="form-control" id="book_time" placeholder="Time">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="">Person</label>
+                    <div class="select-wrap one-third">
+                      <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+                      <select name="" id="" class="form-control">
+                        <option value="">Person</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4+</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12 mt-3">
+                  <div class="form-group">
+                    <input type="submit" value="Make a Reservation" class="btn btn-primary py-3 px-5">
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+			</div>
+		</section>
+  
+  {{>footer}}
+
+  {{>scripts}}
+    
+  </body>
+</html>
